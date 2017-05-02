@@ -1,0 +1,639 @@
+
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foundation for Sites</title>
+    <link rel="stylesheet" href="assets/css/app.css">
+  </head>
+  <body>
+
+    <div class="app-dashboard shrink-medium">
+        <div class="row expanded app-dashboard-top-nav-bar">
+            <div class="columns medium-3">
+                <button data-toggle="app-dashboard-sidebar" class="menu-icon hide-for-medium"></button>
+                <a class="app-dashboard-logo">Project One</a>
+            </div>
+            <div class="columns show-for-medium">
+                <div class="app-dashboard-search-bar-container">
+                    <input class="app-dashboard-search" type="search" placeholder="Search">
+                    <i class="app-dashboard-search-icon fa fa-search"></i>
+                </div>
+            </div>
+            <div class="columns shrink app-dashboard-top-bar-actions">
+                <button href="#" class="button hollow">Logout</button>
+                <a href="#" height="30" width="30" alt=""><i class="fa fa-info-circle"></i></a>
+            </div>
+        </div>
+        <div class="app-dashboard-body off-canvas-wrapper">
+            <div id="app-dashboard-sidebar" class="app-dashboard-sidebar position-left off-canvas off-canvas-absolute reveal-for-medium"
+                data-off-canvas>
+                <div class="app-dashboard-sidebar-title-area">
+                    <div class="app-dashboard-close-sidebar">
+                        <h3 class="app-dashboard-sidebar-block-title">Items</h3>
+    
+                        <button id="close-sidebar" data-app-dashboard-toggle-shrink class="app-dashboard-sidebar-close-button show-for-medium" aria-label="Close menu"
+                            type="button">
+    <span aria-hidden="true"><a href="#"><i class="large fa fa-angle-double-left"></i></a></span>
+    </button>
+                    </div>
+                    <div class="app-dashboard-open-sidebar">
+                        <button id="open-sidebar" data-app-dashboard-toggle-shrink class="app-dashboard-open-sidebar-button show-for-medium" aria-label="open menu"
+                            type="button">
+    <span aria-hidden="true"><a href="#"><i class="large fa fa-angle-double-right"></i></a></span>
+    </button>
+                    </div>
+                </div>
+                <div class="app-dashboard-sidebar-inner">
+                    <ul class="menu vertical">
+                        <li>
+                            <a href="modals.html" class="is-active">
+                                <i class="large fa fa-institution"></i><span class="app-dashboard-sidebar-text">Modals</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="alerts.html">
+                                <i class="large fa fa-hourglass"></i><span class="app-dashboard-sidebar-text">Alerts</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a>
+                                <i class="large fa fa-industry"></i><span class="app-dashboard-sidebar-text">Industry</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="is-active">
+                                <i class="large fa fa-institution"></i><span class="app-dashboard-sidebar-text">Buildings</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a>
+                                <i class="large fa fa-hourglass"></i><span class="app-dashboard-sidebar-text">Time</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a>
+                                <i class="large fa fa-industry"></i><span class="app-dashboard-sidebar-text">Industry</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="is-active">
+                                <i class="large fa fa-institution"></i><span class="app-dashboard-sidebar-text">Buildings</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a>
+                                <i class="large fa fa-hourglass"></i><span class="app-dashboard-sidebar-text">Time</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a>
+                                <i class="large fa fa-industry"></i><span class="app-dashboard-sidebar-text">Industry</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="app-dashboard-body-content off-canvas-content" data-off-canvas-content>
+             <div class="row">
+               <div class="large-12 columns">
+                 <h1>Welcome to P1 with Foundation</h1>
+               </div>
+             </div>
+             
+             <div class="row">
+               <div class="large-12 columns">
+                 <div class="callout">
+                   <h3>We&rsquo;re stoked you want to try Foundation on ProjectOne! </h3>
+                  
+              
+                 </div>
+               </div>
+             </div>
+             
+             <div class="row">
+               <div class="columns">
+             
+               <div data-closable class="callout alert-callout-border info">
+                   <span class="fa fa-info-circle"></span>
+                   <span class="content"><strong>Whoops!</strong> - You clearly did that wrong.</span>
+                   <button class="close-button" aria-label="Dismiss alert" type="button" data-close>
+               <span aria-hidden="true">&times;</span>
+               </button>
+               </div>
+               <div data-closable class="callout alert-callout-border alert">
+                   <span class="fa fa-times-circle"></span>
+                   <span class="content">
+                       <strong>Error</strong> - You are the error.
+                   </span>
+                   <button class="close-button" aria-label="Dismiss alert" type="button" data-close>
+               <span aria-hidden="true">&times;</span>
+               </button>
+               </div>
+               <div data-closable class="callout alert-callout-border success">
+                  <span class="fa fa-check-circle"></span>     
+                   <span class="content">
+                       <strong>Yay!</strong> - You accomplished a simple task!
+                   </span>
+                   <button class="close-button" aria-label="Dismiss alert" type="button" data-close>
+               <span aria-hidden="true">&times;</span>
+               </button>
+               </div>
+               <div data-closable class="callout alert-callout-border warning">
+                   <span class="fa fa-exclamation-triangle"></span>
+                   <span class="content">
+                       <strong>Caution</strong> - A word I don't understand.
+                   </span>
+                   <button class="close-button" aria-label="Dismiss alert" type="button" data-close>
+               <span aria-hidden="true">&times;</span>
+               </button>
+               </div>
+               <div data-closable class="callout alert-callout-border secondary">
+                   <span class="content"><strong>Mistake</strong> - You made a mistake.</span>
+                   <button class="close-button" aria-label="Dismiss alert" type="button" data-close>
+               <span aria-hidden="true">&times;</span>
+               </button>
+               </div>
+               <div data-closable class="callout alert-callout-border">
+                   <strong>Oops</strong> - The most dreadful word in nuclear physics.
+                   <button class="close-button" aria-label="Dismiss alert" type="button" data-close>
+               <span aria-hidden="true">&times;</span>
+               </button>
+               </div>
+               
+               </div>
+             </div>
+             
+             <div class="row">
+               <div class="columns">
+                 <nav aria-label="You are here:" role="navigation">
+                     <ul class="breadcrumbs">
+                         <li><span class="fa fa-home"></span><a href="#0">Home</a>
+                         </li>
+                         <li><a href="#0">Features</a></li>
+                         <li class="disabled">Gene Splicing</li>
+                         <li>
+                             <span class="show-for-sr">Current: </span> Cloning
+                         </li>
+                     </ul>
+                 </nav>
+               </div>
+             </div>
+             
+             <div class="row">
+               <div class="column">
+                 <div class="callout">
+                   <h4>
+                     Modals
+                   </h4>
+                   <div class="row">
+                     <div class="column large-centered">
+                       <div class="button-group stacked-for-small button-group-option" data-grouptype="OR">
+                           <a data-toggle="primary" href="#" class="button hollow primary">Primary</a>
+                           <a data-toggle="success" href="#" class="button hollow success">Success</a>
+                           <a data-toggle="warning" href="#" class="button hollow warning">Warning</a>
+                           <a data-toggle="alert" href="#" class="button hollow alert">Danger</a>
+                       </div>
+                       
+                       
+                       <div class="reveal with-title primary" id="primary" data-reveal data-close-on-click="true" data-animation-in="fade-in" data-animation-out="fade-out">
+                           <div class="row">
+                               <div class="columns header">
+                                   <div class="header-text">Logout</div>
+                                   
+                               </div>
+                               <div class="columns content">
+                                   Are you sure you want to logout ?
+                               </div>
+                       
+                               <div class="columns footer">
+                                   <div class="row">
+                                       <div class="columns large-offset-6 medium-offset-6 large-3 medium-3" small-12>
+                                           <a data-close class=" button backout" href="#">Logout</a>
+                                       </div>
+                                       <div class="columns large -3 medium-3 small-12">
+                                           <a data-close class="default button" href="#">Cancel</a>
+                                       </div>
+                                   </div>
+                               </div>
+                           </div>
+                           <button class="close-button" data-close aria-label="Close reveal" type="button">
+                           <span aria-hidden="true">&times;</span>
+                         </button>
+                       </div>
+                       
+                       
+                       <div class="reveal with-title success" id="success" data-reveal data-close-on-click="true" data-animation-in="fade-in" data-animation-out="fade-out">
+                           <div class="row">
+                               <div class="columns header">
+                                   <div class="header-text">Create new user</div>
+                               </div>
+                               <div class="columns content">
+                                
+                                   <div class="row">
+                                       <div class="columns large-12">
+                                           <p>
+                                           <strong>You are are about to create a new user</strong>
+                                           </p>
+                                       </div>
+                                       <div class="columns large-12">
+                                           <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut. Nemo enim ipsam.</p>
+                                       </div>
+                                       <div class="columns large-12">
+                                           <p>Voluptatem quia voluptas sit aspernatur aut odit aut.</p>
+                                       </div>
+                                   </div>
+                       
+                               </div>
+                       
+                               <div class="columns footer">
+                                   <div class="row">
+                                       <div class="columns large-offset-6 medium-offset-6 large-3 medium-3" small-12>
+                                           <a data-close class=" button backout" href="#">Cancel</a>
+                                       </div>
+                                       <div class="columns large -3 medium-3 small-12">
+                                           <a data-close class=" button default" href="#">Create user</a>
+                                       </div>
+                                   </div>
+                               </div>
+                           </div>
+                           <button class="close-button" data-close aria-label="Close reveal" type="button">
+                           <span aria-hidden="true">&times;</span>
+                         </button>
+                       </div>
+                       
+                       
+                       <div class="reveal with-title warning" id="warning" data-reveal data-close-on-click="true" data-animation-in="fade-in" data-animation-out="fade-out">
+                           <div class="row">
+                               <div class="columns header">
+                                   <div class="header-text">Connect to WiFi</div>
+                               </div>
+                               <div class="columns content">
+                                
+                                   <div class="row">
+                                       <div class="columns large-12">
+                                           <p>
+                                           <strong>WiFi Connection</strong>
+                                           </p>
+                                       </div>
+                                       <div class="columns large-12">
+                                           <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut. Nemo enim ipsam.</p>
+                                       </div>            
+                                   </div>
+                       
+                               </div>
+                       
+                               <div class="columns footer">
+                                   <div class="row">
+                                       <div class="columns large-offset-6 medium-offset-6 large-3 medium-3" small-12>
+                                           <a data-close class=" button backout" href="#">Cancel</a>
+                                       </div>
+                                       <div class="columns large -3 medium-3 small-12">
+                                           <a data-close class=" button default" href="#">Got it</a>
+                                       </div>
+                                   </div>
+                               </div>
+                           </div>
+                           <button class="close-button" data-close aria-label="Close reveal" type="button">
+                           <span aria-hidden="true">&times;</span>
+                         </button>
+                       </div>
+                       
+                       <div class="reveal with-title alert" id="alert" data-reveal data-close-on-click="true" data-animation-in="fade-in" data-animation-out="fade-out">
+                           <div class="row">
+                               <div class="columns header">
+                                   <div class="header-text">Delete User</div>
+                               </div>
+                               <div class="columns content">
+                                
+                                   <div class="row">
+                                       <div class="columns large-12">
+                                           <p>
+                                           <strong>Are you sure you want to delete this user? </strong>
+                                           </p>
+                                       </div>
+                                       <div class="columns large-12">
+                                           <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut. Nemo enim ipsam.</p>
+                                       </div>            
+                                   </div>
+                       
+                               </div>
+                       
+                               <div class="columns footer">
+                                   <div class="row">
+                                       <div class="columns large-offset-6 medium-offset-6 large-3 medium-3" small-12>
+                                           <a data-close class=" button backout" href="#">Cancel</a>
+                                       </div>
+                                       <div class="columns large -3 medium-3 small-12">
+                                           <a data-close class=" button default" href="#">Delete user</a>
+                                       </div>
+                                   </div>
+                               </div>
+                           </div>
+                           <button class="close-button" data-close aria-label="Close reveal" type="button">
+                           <span aria-hidden="true">&times;</span>
+                         </button>
+                       </div>
+                     </div>
+                   </div>
+                 </div>
+               </div>
+             </div>
+             
+             <div class="row">
+               <div class="column large-12">
+                 <div class="callout">
+                   <h4>
+                     Buttons
+                   </h4>
+                   <div class="row">        
+                       <div class="large-12 columns">
+                           <h5>Try one of these buttons:</h5>
+                           <p><a href="#" class="small button">Primary</a><br/>
+                               <a href="#" class="primary button">Primary</a><br/>
+                               <a href="#" class="medium success button">Confirm</a><br/>
+                               <a href="#" class=" hollow medium alert button">Delete</a><br/>
+                               <a href="#" class=" hollow medium success button">Confirm</a><br/>
+                               <a href="#" class="medium warning button">Warning</a><br/>
+                               <a href="#" class="medium secondary button">Secondary Btn</a>
+                               <a href="#" class="medium  disabled button">Disabled</a>
+                           </p>
+                       </div>
+                       
+                       <div class="large-12 columns">
+                           <h5>Try one of these badge buttons:</h5>
+                           <div class="row">
+                               <div class="columns large-3 medium-4 small-12">
+                                   <a href="#" class="expanded primary button">Primary <span class="badge">12</span></a>
+                               </div>
+                               <div class="columns large-3 medium-4 small-12 end">
+                                   <a href="#" class="expanded success button">Success <span class="badge">123</span></a>
+                               </div>
+                                <div class="columns large-3 medium-4 small-12 end">
+                                   <a href="#" class="expanded warning  button">Warning <span class="badge"><i class="fa fa-wrench"></i></span></a>
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+                 </div>
+               </div>
+             </div>
+             
+             <div class="row">
+               <div class="column large-12">
+                 <div class="callout">
+                   <h4>
+                     CSS Arrow Panels
+                   </h4>
+                   <div class="row">  
+                     <div class="columns large-12">
+                        <div class="callout block" >
+                            <div class="block-vertical">
+                                <div class="block-vertical-quote">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ultrices, elit sed faucibus pharetra, diam mauris
+                                        bibendum orci, sit amet ullamcorper purus dui sit amet augue. Donec aliquet diam ut neque mattis, eu tristique
+                                        sem rutrum.</p>
+                                </div>
+                            </div>
+                        
+                            <div class="block-vertical">
+                                <div class="block-vertical-quote">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ultrices, elit sed faucibus pharetra, diam mauris
+                                        bibendum orci, sit amet ullamcorper purus dui sit amet augue. Donec aliquet diam ut neque mattis, eu tristique
+                                        sem rutrum.</p>
+                                </div>
+                            </div>
+                        </div>
+                     </div>      
+                        
+                   </div>
+                 </div>
+               </div>
+             </div>
+             
+             
+             <div class="row">
+               <div class="column large-12">
+                 <div class="callout">
+                   <h4>
+                     Multilevel expand/collapse
+                   </h4>
+                   <div class="row">  
+                     <div class="columns large-12">
+                        <ul class="multilevel-accordion-menu vertical menu" data-accordion-menu>
+                          <li>
+                            <a href="#">Item 1</a>
+                            <ul class="menu vertical sublevel-1">
+                              <li>
+                                <a href="#">Sub-item 1</a>
+                                <ul class="menu vertical sublevel-2">
+                                  <li><a class="subitem" href="#">Thing 1</a></li>
+                                  <li><a class="subitem" href="#">Thing 2</a></li>
+                                  <li><a class="subitem" href="#">Thing 3</a></li>
+                                </ul>
+                              </li>
+                              <li>
+                                <a href="#">Sub-item 2</a>
+                                <ul class="menu vertical sublevel-2">
+                                  <li>
+                                    <a href="#">Super-sub-item 1</a>
+                                    <ul class="menu vertical sublevel-3">
+                                      <li><a class="subitem" href="#">Thing 1</a></li>
+                                      <li><a class="subitem" href="#">Thing 2</a></li>
+                                    </ul>
+                                  </li>
+                                  <li><a class="subitem" href="#">Thing 2</a></li>
+                                </ul>
+                              </li>
+                              <li><a class="subitem" href="#">Thing 1</a></li>
+                              <li><a class="subitem" href="#">Thing 2</a></li>
+                            </ul>
+                          </li>
+                          <li>
+                            <a href="#">Item 2</a>
+                            <ul class="menu vertical sublevel-1">
+                              <li><a class="subitem" href="#">Thing 1</a></li>
+                              <li><a class="subitem" href="#">Thing 2</a></li>
+                            </ul>
+                          </li>
+                          <li>
+                            <a href="#">Item 3</a>
+                            <ul class="menu vertical sublevel-1">
+                              <li><a class="subitem" href="#">Thing 1</a></li>
+                              <li><a class="subitem" href="#">Thing 2</a></li>
+                            </ul>
+                          </li>
+                          <li>
+                            <a href="#">Item 4</a>
+                            <ul class="menu vertical sublevel-1">
+                              <li>
+                                <a href="#">Sub-item 3</a>
+                                <ul class="menu vertical sublevel-2">
+                                  <li><a class="subitem" href="#">Thing 1</a></li>
+                                  <li><a class="subitem" href="#">Thing 2</a></li>
+                                </ul>
+                              </li>
+                              <li><a class="subitem" href="#">Thing 1</a></li>
+                              <li><a class="subitem" href="#">Thing 2</a></li>
+                            </ul>
+                          </li>
+                        </ul>
+                        
+                        
+                     </div>      
+                        
+                   </div>
+                 </div>
+               </div>
+             </div>
+             
+             
+             
+             <div class="row">
+               <div class="large-8 medium-8 columns">
+                 <h5>Here&rsquo;s your basic grid:</h5>
+                 <!-- Grid Example -->
+             
+                 <div class="row">
+                   <div class="large-12 columns">
+                     <div class="primary callout">
+                       <p><strong>This is a twelve column section in a row.</strong> Each of these includes a div.callout element so you
+                         can see where the columns are - it's not required at all for the grid.</p>
+                     </div>
+                   </div>
+                 </div>
+                 <div class="row">
+                   <div class="large-6 medium-6 columns">
+                     <div class="primary callout">
+                       <p>Six columns</p>
+                     </div>
+                   </div>
+                   <div class="large-6 medium-6 columns">
+                     <div class="primary callout">
+                       <p>Six columns</p>
+                     </div>
+                   </div>
+                 </div>
+                 <div class="row">
+                   <div class="large-4 medium-4 small-4 columns">
+                     <div class="primary callout">
+                       <p>Four columns</p>
+                     </div>
+                   </div>
+                   <div class="large-4 medium-4 small-4 columns">
+                     <div class="primary callout">
+                       <p>Four columns</p>
+                     </div>
+                   </div>
+                   <div class="large-4 medium-4 small-4 columns">
+                     <div class="primary callout">
+                       <p>Four columns</p>
+                     </div>
+                   </div>
+                 </div>
+             
+                 <hr />
+             
+                 <h5>We bet you&rsquo;ll need a form somewhere:</h5>
+                 <form>
+                   <div class="row">
+                     <div class="large-12 columns">
+                       <label>Input Label</label>
+                       <input type="text" placeholder="large-12.columns" />
+                     </div>
+                   </div>
+                   <div class="row">
+                     <div class="large-4 medium-4 columns">
+                       <label>Input Label</label>
+                       <input type="text" placeholder="large-4.columns" />
+                     </div>
+                     <div class="large-4 medium-4 columns">
+                       <label>Input Label</label>
+                       <input type="text" placeholder="large-4.columns" />
+                     </div>
+                     <div class="large-4 medium-4 columns">
+                       <div class="row collapse">
+                         <label>Input Label</label>
+                         <div class="input-group">
+                           <input class="input-group-field" type="text" placeholder="input-group" />
+                           <span class="input-group-label">.com</span>
+                         </div>
+                       </div>
+                     </div>
+                   </div>
+                   <div class="row">
+                     <div class="large-12 columns">
+                       <label>Select Box</label>
+                       <select>
+                         <option value="husker">Husker</option>
+                         <option value="starbuck">Starbuck</option>
+                         <option value="hotdog">Hot Dog</option>
+                         <option value="apollo">Apollo</option>
+                       </select>
+                     </div>
+                   </div>
+                   <div class="row">
+                     <div class="large-6 medium-6 columns">
+                       <label>Choose Your Favorite</label>
+                       <input type="radio" name="pokemon" value="Red" id="pokemonRed"><label for="pokemonRed">Radio 1</label>
+                       <input type="radio" name="pokemon" value="Blue" id="pokemonBlue"><label for="pokemonBlue">Radio 2</label>
+                     </div>
+                     <div class="large-6 medium-6 columns">
+                       <label>Check these out</label>
+                       <input id="checkbox1" type="checkbox"><label for="checkbox1">Checkbox 1</label>
+                       <input id="checkbox2" type="checkbox"><label for="checkbox2">Checkbox 2</label>
+                     </div>
+                   </div>
+                   <div class="row">
+                     <div class="large-12 columns">
+                       <label>Textarea Label</label>
+                       <textarea placeholder="small-12.columns"></textarea>
+                     </div>
+                   </div>
+                 </form>
+               </div>
+             
+             
+             
+             </div>
+             
+             
+            </div>
+        </div>
+    </div>
+    
+    
+    
+    <div class="contact-panel" id="contact-panel" data-toggler=".is-active">
+      <a class="contact-panel-button" data-toggle="contact-panel">Contact us</a>
+      <form action="">
+        <div class="row">
+          <label>Full name *
+            <input type="text" placeholder="Full name">
+          </label>
+        </div>
+        <div class="row">
+          <label>Email *
+            <input type="email" placeholder="Email address">
+          </label>
+        </div>
+        <div class="row">
+          <label>Message *
+            <textarea placeholder="Describe your needs" rows="3"></textarea>
+          </label>
+        </div>
+        <div class="contact-panel-actions">
+          <button class="cancel-button" data-toggle="contact-panel">Nevermind</button>
+          <input type="submit" class="button submit-button" value="Submit">
+        </div>
+      </form>
+    </div>
+    
+    
+    
+
+    <script src="assets/js/app.js"></script>
+  </body>
+</html>
