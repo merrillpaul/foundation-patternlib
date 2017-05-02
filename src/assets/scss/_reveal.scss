@@ -1,0 +1,31 @@
+.reveal {
+    &.with-title {
+        //min-height: 200px;
+        min-width: 200px;
+        padding: 0;
+        .header, .footer {
+            padding: $global-padding;
+            background-color: $pale-gray;
+        }
+        .footer {
+            background-color: $white;
+           // position: absolute;
+           // bottom: 0;
+        }
+        .content {
+            padding: $global-padding + 2rem;
+        }
+        .close-button {
+            span {
+                font-size: smaller;
+            }
+        }
+        
+    }
+    
+    @include reveal-modal-header();
+    
+    .button {
+         @include button-expand;
+    }
+}

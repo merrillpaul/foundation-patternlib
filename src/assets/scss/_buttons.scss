@@ -1,0 +1,31 @@
+@import 'settings';
+@import 'mixins';
+
+
+
+.button {
+    &.secondary {
+        color: $btn-primary-color;
+        &:hover {
+         color: $btn-primary-color;   
+        }
+    } 
+    &.disabled,
+    &[disabled] {
+        @include button-disabled();  
+    }
+     
+    &.hollow {
+        @include button-hollow();
+    } 
+
+    &.backout {
+        border: none;
+        background: transparent;
+        color: $secondary-color;
+        &:hover {
+         background-color: scale-color($secondary-color, $lightness: 90%);   
+         color: $secondary-color;
+        }
+    }
+}
