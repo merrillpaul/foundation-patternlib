@@ -21,18 +21,30 @@
 
 
 @mixin reveal-modal-header() {
-  @each $name, $icon in $p1-modal-header-fa {
+  @each $name, $value in $p1-modal-header-fa {
           &.#{$name} {
             .header-text {                          
                 font-family: $body-font-family;
                 &:before {
-                content: $fa-var-check; 
-                color: $success-color;   
-                @include fa-icon();
-                margin-right: 5px;
-                }
-            
+                  content: map-get($value, "icon"); 
+                  color: map-get($value, "color");   
+                  @include fa-icon();
+                  margin-right: 5px;
+                }            
              }
           }
     }
+}
+
+@mixin reveal-modal-default-button() {
+  @each $name, $color in $button-palette {
+      &.#{$name} {
+        .button {
+          @include button-expand;    
+          &.default {
+            @include button-style($color, auto, auto);
+          }
+        }        
+      }
+  }
 }

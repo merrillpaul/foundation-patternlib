@@ -80,16 +80,11 @@ $p1-button-palette: (
   primary: $btn-primary-color,
   secondary: #D2DB0E,
   success: #84BD00,
-  warning: #FFB81C,
+  warning: #EA7600,
   alert: #DB0020,
   backout: $dark-gray  
 );
-$p1-modal-header-fa: (
-  primary: 'info-circle',
-  success: 'check',
-  warning: 'warning',
-  alert: 'close'
-);
+
 
 @include add-foundation-colors;
 
@@ -234,12 +229,12 @@ $accordionmenu-arrow-size: 6px;
 // 9. Badge
 // --------
 
-$badge-background: $primary-color;
-$badge-color: $white;
+$badge-background: $white;
+$badge-color: $secondary-color;
 $badge-color-alt: $black;
 $badge-palette: $foundation-palette;
-$badge-padding: 0.3em;
-$badge-minwidth: 2.1em;
+$badge-padding: 0.4em;
+$badge-minwidth: 2.8em;
 $badge-font-size: 0.6rem;
 
 // 10. Breadcrumbs

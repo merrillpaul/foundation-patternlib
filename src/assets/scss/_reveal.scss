@@ -1,3 +1,9 @@
+$p1-modal-header-fa: (
+  primary: (icon: $fa-var-info-circle, color: $primary-color),
+  success: (icon: $fa-var-check,color: $success-color),
+  warning: (icon: $fa-var-warning,color: $warning-color),
+  alert: (icon: $fa-var-times-circle,color: $alert-color)
+);
 .reveal {
     &.with-title {
         //min-height: 200px;
@@ -24,8 +30,6 @@
     }
     
     @include reveal-modal-header();
-    
-    .button {
-         @include button-expand;
-    }
+    @include reveal-modal-default-button();
+   
 }
